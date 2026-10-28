@@ -8,12 +8,14 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
 <script src="script.js" defer></script>
 
-</head><body><div class="ambient ambient-one"></div>
+</head><body><!-- Décoration lumineuse -->
+<div class="ambient ambient-one"></div>
 <div class="ambient ambient-two"></div>
 
 <div id="petal-field" aria-hidden="true"></div>
@@ -21,18 +23,28 @@
 
 <main class="page-container">
 
+    <!-- En-tête -->
     <header class="top-label">
-        <span class="tiny-heart">♥</span>
+        <span class="tiny-heart" aria-hidden="true">♥</span>
         <span>UNE PETITE SURPRISE POUR TOI</span>
-        <span class="tiny-heart">♥</span>
+        <span class="tiny-heart" aria-hidden="true">♥</span>
     </header>
 
+    <!-- Page d'accueil -->
     <section class="intro" id="intro">
-        <div class="title-ornament" aria-hidden="true">✧ ♡ ✧</div>
 
-        <p class="eyebrow">À la personne qui occupe une place spéciale dans mon cœur</p>
+        <div class="title-ornament" aria-hidden="true">
+            ✧ ♡ ✧
+        </div>
 
-        <h1>Pour toi,<br><span>Lande</span></h1>
+        <p class="eyebrow">
+            À la personne qui occupe une place spéciale dans mon cœur
+        </p>
+
+        <h1>
+            Pour toi,<br>
+            <span>Lande</span>
+        </h1>
 
         <p class="intro-text">
             Il y a des choses que le cœur ressent profondément
@@ -40,30 +52,46 @@
             Aujourd’hui, j’ai préparé quelque chose pour toi…
         </p>
 
+        <!-- Enveloppe animée -->
         <div class="envelope-scene">
+
             <div class="envelope" id="envelope">
+
                 <div class="envelope-back"></div>
 
                 <div class="envelope-letter">
                     <span>Pour Lande</span>
-                    <span class="envelope-heart">♥</span>
+                    <span class="envelope-heart" aria-hidden="true">♥</span>
                 </div>
 
                 <div class="envelope-front"></div>
                 <div class="envelope-flap"></div>
 
-                <div class="envelope-seal" aria-hidden="true">♥</div>
+                <div class="envelope-seal" aria-hidden="true">
+                    ♥
+                </div>
+
             </div>
+
         </div>
 
         <button class="primary-button" id="openButton" type="button">
-            Ouvrir ma surprise <span aria-hidden="true">♡</span>
+            Ouvrir ma surprise
+            <span aria-hidden="true">♡</span>
         </button>
 
-        <p class="hint">Prends un petit instant pour toi…</p>
+        <p class="hint">
+            Prends un petit instant pour toi…
+        </p>
+
     </section>
 
-    <section class="letter-section hidden" id="letter" aria-hidden="true">
+    <!-- Lettre d'amour -->
+    <section
+        class="letter-section hidden"
+        id="letter"
+        aria-hidden="true"
+    >
 
         <div class="letter-paper">
 
@@ -71,16 +99,22 @@
                 ✧ &nbsp; ♡ &nbsp; ✧
             </div>
 
-            <p class="letter-kicker">Une lettre écrite avec le cœur</p>
+            <p class="letter-kicker">
+                Une lettre écrite avec le cœur
+            </p>
 
-            <h2>À toi, Lande,<br><span>mon amour</span></h2>
+            <h2>
+                À toi, Lande,<br>
+                <span>mon amour</span>
+            </h2>
 
-            <div class="letter-divider">
+            <div class="letter-divider" aria-hidden="true">
                 <span></span>
                 <span class="divider-heart">♥</span>
                 <span></span>
             </div>
 
+            <!-- Texte original de ta lettre -->
             <article class="letter-body">
 
                 <p>
@@ -157,10 +191,18 @@
                     je te choisirais encore.
                 </p>
 
-                <p class="love-declaration">Je t’aime, Lande. ❤️</p>
+                <p class="love-declaration">
+                    Je t’aime, Lande. ❤️
+                </p>
+
+                <p class="last-paragraph">
+                    À toi, aujourd’hui, demain et pour tous les beaux
+                    moments que nous n’avons pas encore vécus..
+                </p>
 
             </article>
 
+            <!-- Signature -->
             <div class="signature">
                 <span>Avec tout mon cœur,</span>
                 <strong>Pour toi, Lande ♥</strong>
@@ -172,23 +214,39 @@
 
         </div>
 
+        <!-- Petite surprise supplémentaire -->
         <section class="secret-section">
+
             <div class="secret-star" aria-hidden="true">✧</div>
 
-            <p class="secret-eyebrow">Il reste encore une petite chose…</p>
+            <p class="secret-eyebrow">
+                Il reste encore une petite chose…
+            </p>
 
             <h3>Un dernier secret</h3>
 
             <p class="secret-intro">
-                Cette lettre ne dit peut-être pas tout ce que mon cœur voudrait te dire.
+                Cette lettre ne dit peut-être pas tout ce que mon cœur
+                voudrait te dire.
             </p>
 
-            <button class="secret-button" id="secretButton" type="button"
-                    aria-expanded="false" aria-controls="secretMessage">
-                Découvrir mon petit secret <span aria-hidden="true">♡</span>
+            <button
+                class="secret-button"
+                id="secretButton"
+                type="button"
+                aria-expanded="false"
+                aria-controls="secretMessage"
+            >
+                Découvrir mon petit secret
+                <span aria-hidden="true">♡</span>
             </button>
 
-            <div class="secret-message hidden" id="secretMessage" aria-hidden="true">
+            <div
+                class="secret-message hidden"
+                id="secretMessage"
+                aria-hidden="true"
+            >
+
                 <div class="secret-heart" aria-hidden="true">♥</div>
 
                 <p>
@@ -209,30 +267,45 @@
                     il y en a un que je veux que tu retiennes :
                     <strong>toi.</strong> ❤️
                 </p>
+
             </div>
+
         </section>
 
-        <button class="music-button" id="musicButton" type="button"
-                aria-pressed="false">
+        <!-- Contrôle de la musique -->
+        <button
+            class="music-button"
+            id="musicButton"
+            type="button"
+            aria-pressed="false"
+        >
             <span id="musicIcon" aria-hidden="true">♫</span>
             <span id="musicLabel">Écouter notre ambiance</span>
         </button>
 
         <p class="closing-note">
-            Certaines personnes deviennent précieuses sans même s’en rendre compte. ♡
+            Certaines personnes deviennent précieuses sans même
+            s’en rendre compte. ♡
         </p>
 
     </section>
 
+    <!-- Pied de page -->
     <footer class="site-footer">
         <span>Créé avec amour</span>
-        <span class="footer-heart">♥</span>
+        <span class="footer-heart" aria-hidden="true">♥</span>
         <span>Pour Lande</span>
     </footer>
 
 </main>
 
-<audio id="backgroundMusic" src="assets/music.mp3" loop preload="none"></audio>
+<!-- Musique facultative -->
+<audio
+    id="backgroundMusic"
+    src="assets/music.mp3"
+    loop
+    preload="none"
+></audio>
 
 </body>
 </html>
